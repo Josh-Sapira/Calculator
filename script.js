@@ -37,7 +37,6 @@ function handleSymbol(symbol) {
             if(lastOperator === null || isNaN(buffer)) {
                 return;
             }
-            console.log(lastNumber, lastOperator, buffer);
             flushOperation(parseFloat(buffer));
             lastOperator = null;
             buffer = total;
